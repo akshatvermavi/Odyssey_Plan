@@ -1,0 +1,94 @@
+{% extends 'base.html' %}
+{% block title %}
+Home
+{% endblock title %}
+{% block body %}
+{% load crispy_forms_tags %}
+
+    <div class="container my-3"> 
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://thumbs.dreamstime.com/b/hand-touching-cybersecurity-button-cybercrime-inscription-concept-178726093.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://thumbs.dreamstime.com/b/hand-touching-cybersecurity-button-cybercrime-inscription-concept-178726093.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://thumbs.dreamstime.com/b/hand-touching-cybersecurity-button-cybercrime-inscription-concept-178726093.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden"></span>
+        </button>
+      </div>
+    </div>
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div> 
+
+      
+<main>
+
+  <section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <p>
+        <div class="type-container">
+          <h1>Event_Sangam <span class="protect">Event</span> Managemant <span class="auto-type"></span></h1>
+        </div>
+        <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+        <!-- Setup and start animation! -->
+        <script>
+          var typed = new Typed('.auto-type', {
+            strings: ["intrusion!", "image forgery!", "malware!"],
+            typeSpeed: 150,
+            backSpeed: 150,
+            loop: true
+          });
+        </script>
+        <style>
+          .type-container {
+            width: 90%;
+            margin: auto;
+          }
+
+          .type-container span:nth-child(1) {
+            color: green;
+          }
+
+          .type-container span:nth-child(2) {
+            color: #d90429;
+          }
+        </style>      
+        <br>
+        <br>
+        <br>
+        <h1 class="fw-light">Event_Sangam</h1>
+        <p class="lead text-muted">
+          A Event management website
+        </p>
+        </p>
+      </div>
+    </div>
+  </section>
+
+      
+    </form>
+  </div>
+  </div>
+  <br><br><br>
+
+
+
+</main>
+
+{% endblock body %}
