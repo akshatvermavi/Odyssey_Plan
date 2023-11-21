@@ -1,4 +1,4 @@
-#!/home/akshat-verma/Event_Sangam/Event_Sangam/venv/bin/python3
+#!/home/akshat-verma/Event_Sangam/Event_Sangam/venv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys
