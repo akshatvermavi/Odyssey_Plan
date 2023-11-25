@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Destination
 from django.shortcuts import render
-from Movierecommendationmodel import movie_recommendation_challange
+from .Movierecommendationmodel import movie_recommendation_challange
 from django.shortcuts import render, redirect
 
 
@@ -23,16 +23,18 @@ def threed(request):
     return render(request,'threed.html')
 
 def movieform(request):
-    # print('gsdkghk')
+    res = [] 
     if request.method == 'POST':
         movie = request.POST.get('movie', '')
         print(movie)
-        print('gsdkghk')
-
+        
+        # Assuming movie_recommendation_challange returns a DataFrame with a 'Title' column
         res = movie_recommendation_challange(movie)
         res = list(res['Title'])
-        print(res)
-        return render(request, 'result.html', res)
+
+        # Pass the results as part of the dictionary in the render function
+        return render(request, 'result.html', {'results': res})
+    return render(request, 'result.html', {'results': res})
 def predict(request):
     return render(request,'predicts.html')
   # Replace 'your_module' with the actual module name

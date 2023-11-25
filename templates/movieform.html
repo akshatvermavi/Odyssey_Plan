@@ -4,7 +4,7 @@ About
 {% endblock title %}
 {% block body %}
 {% load crispy_forms_tags %}
-<form method="POST" action="/predict/">
+<form method="POST" action="/predict">
     {% csrf_token %}
     {{ form|crispy }}
 
