@@ -7,3 +7,4 @@ class Destination(models.Model):
     desc = models.TextField()
     price = models.IntegerField()
     offers = models.BooleanField(default=False)
+

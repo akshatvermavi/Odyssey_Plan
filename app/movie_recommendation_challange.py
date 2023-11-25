@@ -55,7 +55,7 @@ final_dataset.reset_index(inplace=True)
 # knn.fit(csr_data)
 
 import pickle
-knn = pickle.load(open('/home/akshat-verma/Event_Sangam/Event_Sangam/Movierecommendationmodel/model', 'rb'))
+knn = pickle.load(open('model', 'rb'))
 
 def get_movie_recommendation(movie_name):
     n_movies_to_reccomend = 10
@@ -75,4 +75,4 @@ def get_movie_recommendation(movie_name):
     else:
         return "No movies found. Please check your input"
 
-# get_movie_recommendation('Iron Man')
+get_movie_recommendation('Iron Man')
