@@ -26,7 +26,7 @@ ODYSSEY PLAN will enable users to orchestrate and plan events with ease ensuring
 - Customize access and permissions for — users and teams.
 - Ability to filter tasks by labels.
 - Ability to search across all tasks with advanced search options where you can also specify labels, deadline etc while searching.
-## Bonus Features 
+## Advanced ML Features 
 - Movie recomendation system
 ## Technology Stack
 
@@ -45,7 +45,7 @@ ODYSSEY PLAN will enable users to orchestrate and plan events with ease ensuring
 # Authors
 
 AKSHAT VERMA (akshat.20213027@mnnit.ac.in)
-
+Utkarsh Mishra (utkarsh.20214226@mnnit.ac.in)
 
 
 
